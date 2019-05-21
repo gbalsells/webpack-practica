@@ -1,0 +1,166 @@
+
+@media (min-width: 540px) {
+  .main-articles{
+    margin: 2rem 20% 1rem 20%;
+
+    article{
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+    }
+
+    .article-detail{
+      max-width: 47%;
+      margin: 0;
+      font-size: x-large;
+    }
+
+    figure{
+      max-width: 47%;
+      margin: 0;
+      box-shadow: 0 0 5px 1px rgba(0,0,0,.3);
+    }
+  }
+
+  .main-form{
+    .formulario{
+      margin: 2rem 20% 1rem 20%;
+
+      &__nye{
+
+        &__nombre{
+          width: 47%;
+          margin: 0;
+        }
+
+        &__email{
+          width: 47%;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+
+  .main-header{
+    margin-bottom: 0;
+
+    h1{
+      font-size: medium;
+    }
+
+    h2{
+      font-size: xx-large;
+    }
+  }
+
+  .main-articles{
+    margin: 0.5rem 1rem 1rem 1rem;
+
+    article{
+      flex-wrap: wrap;
+      align-content: center;
+      align-items: center;
+      font-size: medium;
+
+      h1{
+        font-size: x-large;
+      }
+
+      .article-detail{
+        max-width: 100%;
+      }
+  
+      figure{
+        max-width: 100%;
+      }
+    }
+  }
+
+  .main-form{
+
+    h1{
+      font-size: large;
+      font-weight: bold;
+    }
+    h2{
+      font-size: medium;
+      font-weight: normal;
+    }
+
+    .formulario{
+      margin: 1rem 1rem 1rem 1rem;
+      &__nye{
+        flex-wrap: wrap;
+
+        &__nombre{
+          width: 100%;
+          margin: 0;
+        }
+
+        &__email{
+          width: 100%;
+          margin-top: 1rem;
+        }
+      }
+
+      &__submit{
+        text-align: center;
+        
+        input{
+          width: 100%;
+          height: 2.5rem;
+        }
+      }
+    }
+    .modal{
+      width: 60%;
+      text-align: left;
+      position: absolute;
+      border: 1px solid black;
+      box-shadow: 0 0 10px 1px rgba(0,0,0,.4);
+      background-color: white;
+      padding: 20px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+  
+      .cerrar{
+        float: right;
+        margin-top: 1rem;
+  
+        button{
+          text-transform: uppercase;
+          float: left;
+          background-color: white;
+          text-align: center;
+          font-weight: bold;
+          border: #2d2b31;
+          border: 1px solid;
+          width: 6rem;
+          height: 2.5rem;
+          transition: color .15s ease-in-out,background-color .15s ease-in-out;
+    
+          &:hover{
+            background-color: #2d2b31;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+
+  footer{
+    font-size: medium;
+    padding-top: 1rem;
+
+    .fa {
+      padding: 7px;
+      font-size: 15px;
+      width: 15px;
+      height: 15px;
+    }
+    
+  }
+}
